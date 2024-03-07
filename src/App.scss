@@ -1,5 +1,10 @@
 @import './Styles/variables';
 
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: $background-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
