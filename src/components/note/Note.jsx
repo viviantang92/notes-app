@@ -1,11 +1,10 @@
 import React from "react";
 import "./Note.scss";
 
-export const Note = (props) => {
+export const Note = ({ id, content }) => {
   return (
-    <div className="note">
-      <h2>{props.title}</h2>
-      <p>{props.content}</p>
+    <div key={id} className="note">
+      <textarea placeholder="Type here">{content}</textarea>
       <div className="note-footer">
         <button>Edit</button>
         <button>Delete</button>
