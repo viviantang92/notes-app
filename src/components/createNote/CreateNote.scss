@@ -7,6 +7,14 @@
   border: 1.5px solid rgba(255, 255, 255, 0.326);
   padding: 1rem;
   height: 250px;
+  
+  &__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
 
   textarea{
     width: 100%;
@@ -17,7 +25,6 @@
     border: none;
     &:focus {
       outline: none;
-
     }
   }
 }

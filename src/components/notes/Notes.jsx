@@ -5,12 +5,7 @@ import { Note } from "../note/Note";
 import { v4 as uuid } from "uuid";
 
 export const Notes = () => {
-  const [notes, setNotes] = useState([
-    { id: 1, text: "text1" },
-    { id: 2, text: "text2" },
-    { id: 3, text: "text3" },
-    { id: 4, text: "text3" },
-  ]);
+  const [notes, setNotes] = useState([]);
   const [inputText, setInputText] = useState("");
 
   const textHandler = (e) => {
@@ -29,9 +24,13 @@ export const Notes = () => {
 
   return (
     <div className="notes-wrapper">
-      <CreateNote inputText={inputText} textHandler={textHandler} addNote={addNote} />
+      <CreateNote
+        inputText={inputText}
+        textHandler={textHandler}
+        addNote={addNote}
+      />
       {notes.map((note) => (
-        <Note id={note.id} text={note.text} deleteNote={deleteNote}/>
+        <Note id={note.id} text={note.text} deleteNote={deleteNote} />
       ))}
     </div>
   );
