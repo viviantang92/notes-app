@@ -1,13 +1,15 @@
 import React from "react";
 import "./Note.scss";
+import { Button } from "../button/Button";
 
-export const Note = ({ id, content }) => {
+export const Note = ({ id, text, deleteNote }) => {
   return (
     <div key={id} className="note">
-      <textarea placeholder="Type here">{content}</textarea>
-      <div className="note-footer">
-        <button>Edit</button>
-        <button>Delete</button>
+      <div className="note_body">
+        <p>{text}</p>
+      </div>
+      <div className="note_footer">
+        <Button onClick={() => deleteNote(id)} text={"Delete"} />
       </div>
     </div>
   );

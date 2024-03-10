@@ -1,16 +1,20 @@
 @import './Styles/variables';
 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $background-color;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:sans-serif;
+  color: $font-color;
 }
 
 body{
   display: flex;
   justify-content: center;
-  align-items:start;
-  min-height: 100vh;
+  min-height: 100vh;  
+  background: rgb(64,16,84);
+  background: linear-gradient(137deg, rgba(64,16,84,1) 0%, rgba(14,50,83,1) 100%);
+  margin: 30px 0px;
 }
+
